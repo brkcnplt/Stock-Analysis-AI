@@ -54,7 +54,7 @@ def get_price(df):
 
 # ---------------- Scraping Fonksiyonu ----------------
 def fetch_financial_data(stock_code, donem=None):
-    """Scorecard sayfasından carpanlar ve karlilik verilerini getirir"""
+    """Web sayfasından carpanlar ve karlilik verilerini getirir"""
     headers = {"User-Agent": "Mozilla/5.0", "Content-Type": "application/x-www-form-urlencoded"}
     data = {"SeciliHisse": stock_code}
     if donem:
